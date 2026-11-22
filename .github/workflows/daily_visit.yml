@@ -2,9 +2,8 @@ name: Daily Auto Login Visit
 
 on:
   schedule:
-    # 한국 시간(KST) 낮 12시 5분 실행 (UTC 기준 03:05)
-    # ※ 밤 자정 12시 5분을 원하시면 '5 15 * * *' 로 수정하세요.
-    - cron: '5 3 * * *'
+    # 한국 시간(KST) 매일 새벽 1시 00분 실행 (UTC 기준 16:00)
+    - cron: '0 16 * * *'
   workflow_dispatch: # 수동 즉시 실행 테스트 버튼
 
 permissions:
