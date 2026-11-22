@@ -31,7 +31,3 @@ jobs:
         env:
           SITE_COOKIES: ${{ secrets.SITE_COOKIES }}
         run: python main.py
-
-      # 60일 무활동으로 스케줄이 자동 중지되는 것을 방지
-      - name: Keepalive workflow
-        uses: gautamkrishnar/keepalive-workflow@v2
